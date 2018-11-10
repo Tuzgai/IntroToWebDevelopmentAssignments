@@ -4,16 +4,16 @@ Name: Stuart Wilson
 Date Created: 11/10/18
 Most recent revision: 11/10/18
 
-Use this page as a template for creating any new pages.
+TODO: Use CSS to fix the alignment of the labels to the input elements
 -->
 
 <html lang="en">
     <head>
-        <title>PAGE TITLE</title>
+        <title>Contact Us</title>
     </head>
 
     <body>
-        <header>
+        <header align=center>
             <h1>Waluigi's Food Emporium</h1>
         </header>
         
@@ -25,9 +25,44 @@ Use this page as a template for creating any new pages.
             <hr>
         </nav>
         
+        <form align="center">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name"><br /><br />
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email"><br /><br />
+            <label for="phone">Phone:</label>
+            <input type="text" name="phone" id="phone"><br /><br />
+            <label for="reason">Reason for Inquiry:</label>
+            <select id="reason" name="reason">
+                <option value="catering" selected>Catering</option>
+                <option value="private">Private Party</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select><br /><br />
+            Have you been to the restaurant?
+            <input type="radio" id="choice1" name="beenHere" value="no" checked="checked">
+            <label for="choice1">No</label>
+            <input type="radio" id="choice2>" name="beenHere" value="yes">
+            <label for="choice2">Yes</label><br />
+            <br />
+            Best days to contact you:
+            <input type="checkbox" id="monday" name="day" value="M">
+            <label for="monday">M</label>
+            <input type="checkbox" id="tuesday" name="day" value="T">
+            <label for="tuesday">T</label>
+            <input type="checkbox" id="wednesday" name="day" value="M">
+            <label for="wednesday">W</label>
+            <input type="checkbox" id="thursday" name="day" value="M">
+            <label for="thursday">Th</label>
+            <input type="checkbox" id="friday" name="day" value="M">
+            <label for="friday">F</label>
+            <br /><br />
+            <input type="submit" name="submit" value="Send Request" align="center">
+        </form>
+        
         <footer>
             <hr />
-            <p>
+            <p align="center">
                 26 Grimace Lane, Mushroom Kingdom, IMG EEK<br />
                 555-555-5555
             </p>
