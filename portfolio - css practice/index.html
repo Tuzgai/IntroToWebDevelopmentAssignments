@@ -2,7 +2,7 @@
 <!--
 Name: Stuart Wilson
 Date Created: 10/28/18
-Most recent revision: 11/24/18 
+Most recent revision: 10/28/18 
 
 The images used in this project are taken from Pixabay under the CC 0 license.
 The pixabay file IDs can be found in each image name.
@@ -11,54 +11,29 @@ The pixabay file IDs can be found in each image name.
 <html lang="en">
     <head>
         <title>Stuart's Portfolio</title>
-        <link href="styles/main.css" rel="stylesheet" type="text/css" />
-        
+        <link href="teststyles.css" rel="stylesheet" type="text/css" />
+
         <style>
-            caption {
-                font-weight: bold;
-                font-size: 1.2em;
-                margin-bottom: 8px;
+            header {
+                background-color: darkgray;
             }
-            
-            table, th, td {
-                border: 1px solid #0d1f2d;
-                border-collapse: collapse;
-                padding: 5px 10px;
-            }
-            
-            table {
-                width: 90%;
-                margin: auto;
-            }
-            
-            tr {
-                height: 30px;
-            }
-            
-            th {
-                background-color: #546a7b;
-                color: #f2eded;
-            }
-            
-            tr:nth-child(odd) {
-                background-color: #e5c4ad;
-            }
-            
-        </style>
+        </style> 
     </head>
     <body>
         <header>
             <h1>Portfolio for Stuart Wilson</h1>
         </header> 
 
-        <nav>
+        <hr />
+        <nav class="border">
             <p><a href="projects.html">Projects</a></p>
             <p><a href="contact.html">Contact Me</a></p>
             <p><a href="testimonials.html">Testimonials</a></p>
         </nav>
+        <hr />
         
         <section>
-            <article id="about-me">
+            <article class="border" id="about-me">
                 <h2><em>About Me</em></h2>
                 <a href="index.html">
                         <img src="images/aboutme-593358_640.jpg" alt="Portrait of John Doe"  />
@@ -75,32 +50,28 @@ The pixabay file IDs can be found in each image name.
                 <a href="index.html">
                     <img src="images/pastexperiences-336378_640.jpg" alt="Past Experiences"/>
                 </a>
-                <table>
+                <table border="6">
                     <caption>Employment History</caption>
-                    <thead>
-                        <tr>
-                            <th>Years of Employment</th>
-                            <th>Title</th>
-                            <th>Company</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>2018-Present</td>
-                            <td>Apprentice</td>
-                            <td>The Software Guild</td>
-                        </tr>
-                        <tr>
-                            <td>2012-2018</td>
-                            <td>Organized Play Production Coordinator</td>
-                            <td>Asmodee North America</td>
-                        </tr>
-                        <tr>
-                            <td>2011-2012</td>
-                            <td>Sales Associate</td>
-                            <td>Marbles: The Brain Store</td>
-                        </tr>
-                    </tbody>
+                    <tr>
+                        <th>Years of Employment</th>
+                        <th>Title</th>
+                        <th>Company</th>
+                    </tr>
+                    <tr>
+                        <td>2018-Present</td>
+                        <td>Apprentice</td>
+                        <td>The Software Guild</td>
+                    </tr>
+                    <tr>
+                        <td>2012-2018</td>
+                        <td>Organized Play Production Coordinator</td>
+                        <td>Asmodee North America</td>
+                    </tr>
+                    <tr>
+                        <td>2011-2012</td>
+                        <td>Sales Associate</td>
+                        <td>Marbles: The Brain Store</td>
+                    </tr>
                 </table>
             </article>
             <article id="hobbies">
@@ -137,8 +108,9 @@ The pixabay file IDs can be found in each image name.
             </article>
         </section>
         
-        <footer>
-            <p>&copy; 2018 <span>Stuart Wilson</span>. All rights reserved.</p>
+        <footer style="background-color:fuchsia">
+            <hr />
+            <p>&copy; 2018 <span style="background-color: lightcyan">Stuart Wilson</span>. All rights reserved.</p>
         </footer>
     </body>
 </html>

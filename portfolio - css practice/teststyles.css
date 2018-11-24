@@ -1,0 +1,17 @@
+            body {
+                background-color:lightblue;
+            }
+            
+            header, footer {
+                background-color: indianred;
+                color: white;
+            }
+            
+            .border {
+                border: thick solid blue;
+            }
+            
+            #past-experiences {
+                border: thick dashed orange;
+            }
+        </style> 

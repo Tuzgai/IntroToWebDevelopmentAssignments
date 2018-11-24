@@ -2,45 +2,12 @@
 <!--
 Name: Stuart Wilson
 Date Created: 10/28/18
-Most recent revision: 11/24/18 
+Most recent revision: 10/28/18 
 -->
 
 <html lang="en">
     <head>
         <title>Contact</title>
-        <link href="styles/main.css" rel="stylesheet" type="text/css" />
-        <style>
-            label, fieldset {
-                font-size: 1.1em;
-            }
-            
-            input[type=text] {
-                border: 2px solid #0d1d2d;
-                width: 50%;
-                padding: 8px 8px;
-                margin: 12px 0;
-                box-sizing: border-box;
-                font-size: 1.1em;
-            }
-            
-            select, textarea {
-                margin: 12px 0;
-                font-size 1em;
-            }
-            
-            input[type=submit] {
-                font-size: 1.2em;
-                background-color: #546a7b;
-                color: #fef9ff;
-                padding: 4px 8px;
-            }
-            
-            input[type=submit]:hover {
-                background-color: #f2eded;
-                color: #546a7b;
-            }
-            
-        </style>
     </head>
 
     <body>
@@ -48,9 +15,11 @@ Most recent revision: 11/24/18
             <h1>Contact Me</h1>
         </header>
         
+        <hr>
         <nav>
-            <p><a href="index.html">Home</a></p>
+            <a href="index.html">Home</a>
         </nav>
+        <hr>
         
         <h2>Information Request</h2>
         <form action="submit.html" method="POST">
@@ -85,12 +54,13 @@ Most recent revision: 11/24/18
                 <label for="choice2">No</label><br />
             </fieldset><br />
             <label for="info">Additional Information</label><br />
-            <textarea style="width:95%; height: 200px; padding: 12px 20px; margin: 12px 0, box-sizing: border-box; border: 2px solid #0d1d2d; border-radius: 3px; background-color: #fff; resize: none;" id="info" name="info"></textarea><br />
+            <textarea id="info" name="info"></textarea><br />
             <input type="submit" name="submit">
         </form>
         
         <footer>
-            <p>&copy; 2018 <span>Stuart Wilson</span>. All rights reserved.</p>
+            <hr />
+            <p>&copy; 2018 <span style="background-color: lightcyan">Stuart Wilson</span>. All rights reserved.</p>
         </footer>
     </body>
 </html>
