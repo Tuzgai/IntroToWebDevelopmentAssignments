@@ -10,6 +10,13 @@ TODO: Use CSS to fix the alignment of the labels to the input elements
 <html lang="en">
     <head>
         <title>Contact Us</title>
+        <link rel="stylesheet" type="text/css" href="styles/restaurantStyles.css">
+        
+        <style>
+            .required {
+                font-weight: bold;
+            }
+        </style>
     </head>
 
     <body>
@@ -26,13 +33,13 @@ TODO: Use CSS to fix the alignment of the labels to the input elements
         </nav>
         
         <form align="center">
-            <label for="name">Name:</label>
+            <label for="name" class="required">Name:</label>
             <input type="text" name="name" id="name"><br /><br />
-            <label for="email">Email:</label>
+            <label for="email" class="required">Email:</label>
             <input type="text" name="email" id="email"><br /><br />
-            <label for="phone">Phone:</label>
+            <label for="phone" class="required">Phone:</label>
             <input type="text" name="phone" id="phone"><br /><br />
-            <label for="reason">Reason for Inquiry:</label>
+            <label for="reason" class="required">Reason for Inquiry:</label>
             <select id="reason" name="reason">
                 <option value="catering" selected>Catering</option>
                 <option value="private">Private Party</option>

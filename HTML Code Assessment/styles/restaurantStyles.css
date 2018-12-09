@@ -1,5 +1,30 @@
-h1 {
+header h1 {
     font-family: 'Vollkorn:bold', serif; 
     text-shadow: 2px 2px 2px #aaa; 
     font-size: 48px  
+}
+
+body {
+    background-color: #E1DEE9;
+}
+
+nav a {
+    text-decoration: none;
+    color: #495867;
+}
+
+nav a:visited {
+    color: #A09ABC;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav a:active {
+    text-decoration: none;
+}
+
+footer {
+    
 }
