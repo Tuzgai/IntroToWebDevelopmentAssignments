@@ -1,3 +1,10 @@
+* + * {
+    margin-bottom: 1em;
+}
+
+p {
+    text-align: center;
+}
 header h1 {
     font-family: 'Vollkorn:bold', serif; 
     text-shadow: 2px 2px 2px #aaa; 

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/Javascript" src="luckySevens.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <style>
+            * + * {
+                margin-bottom: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Lucky Sevens</h1>
+            <form name="luckySevensForm" onsubmit="return validateItems()">
+                <div class="form-group">
+                    <label for="bet">Bet:</label>
+                    <div>
+                        <span style="position: absolute; margin-left: 1px; margin-top: 0.5em;">$</span>
+                        <input type="number" class="form-control" id="bet">
+                    </div>
+                </div>
+                <button type="submit" id="displayButton" class="btn">Play</button>
+            </form>
+        
+            <table class="table table-striped" id="results" style="display:none;">
+                <thead>
+                    <tr>
+                        <th>Starting Bet</th>
+                        <th id="startingBet">$####.##</th>  
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Total Rolls Before Going Broke</td>
+                        <td id="totalRolls">#</td>
+                    </tr>
+                    <tr>
+                        <td>Highest Amount Won</td>
+                        <td id="highestAmount">$####.##</td>
+                    </tr>
+                    <tr>
+                        <td>Roll Count at Highest Amount Won</td>
+                        <td id="highestRollCount">#</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>    
+    </body>
+</html>
