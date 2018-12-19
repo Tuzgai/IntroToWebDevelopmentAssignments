@@ -5,6 +5,12 @@
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <style>
+            * + * {
+                margin-bottom: 1em;
+            }
+        
+        </style>
     </head>
     <body>
         <div class="container">
@@ -12,7 +18,7 @@
             <form name="luckySevensForm" onsubmit="return validateItems()">
                 <div class="form-group-md">
                     <label for="bet">Bet:</label>
-                    <div class="input-group">
+                    <div class="input-group col-sm-3">
                         <span class="input-group-addon">$</span>
                         <input type="number" class="form-control" id="bet">
                     </div>
