@@ -44,7 +44,7 @@ function validateItems() {
         }
         
     }
-    
+    document.getElementById("resultsTitle").style.display = "block";
     document.getElementById("results").style.display = "block";
     document.getElementById("startingBet").innerText = "$" + bet;
     document.getElementById("totalRolls").innerText = rollCount;
