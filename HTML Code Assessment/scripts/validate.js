@@ -36,7 +36,7 @@ function validateItems() {
     // This is a placeholder for more validation logic.
     if (name == "") {
         alert("Please enter your name.");
-        document.forms["contactForm"]["name"].parentElement.className = "form-group has-error";
+        document.forms["contactForm"]["name"].parentElement.className = "form-row form-group col-md-6 has-error";
         document.forms["contactForm"]["name"].focus;
         return false;
     }
@@ -45,14 +45,14 @@ function validateItems() {
     // This is a placeholder for more validation logic.
     if (email == "" || !validateEmail(email)) {
         alert("Please enter your email.");
-        document.forms["contactForm"]["email"].parentElement.className = "form-group has-error";
+        document.forms["contactForm"]["email"].parentElement.className = "form-row form-group col-md-6 has-error";
         document.forms["contactForm"]["email"].focus;
         return false;
     }
     
     if (phone == "" || !validatePhone(phone)) {
         alert("Please enter a valid telephone number.");
-        document.forms["contactForm"]["phone"].parentElement.className = "form-group has-error";
+        document.forms["contactForm"]["phone"].parentElement.className = "form-row form-group col-md-6 has-error";
         document.forms["contactForm"]["phone"].focus;
         return false;
     }
