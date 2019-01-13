@@ -2,7 +2,7 @@
 <!--
 Name: Stuart Wilson
 Date Created: 11/10/18
-Most recent revision: 12/21/18
+Most recent revision: 1/9/19
 -->
 
 <html lang="en">
@@ -29,12 +29,18 @@ Most recent revision: 12/21/18
                 background-color: #593C8F;
             }
             
+            .center-block {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            }
+            
         </style>
     </head>
 
-    <body>
-        <div class="container">
-            <header align=center>
+    <body> 
+        <div class="container col-lg-8">
+            <header class="row">
                 <h1>Waluigi's Food Emporium</h1>
             </header>
 
@@ -45,77 +51,81 @@ Most recent revision: 12/21/18
                     <li class="nav-item"><a class="nav-link active" href="contact.html" aria-label="Contact Us">Contact Us</a></li>
                 </ul>
             </nav>
-            
+            <main>
             <p id="acknowledgement" style="display:none;">
                 Thanks for getting in touch, we'll get back to you within 1 business day!
             </p>
-            
-            <form name="contactForm" onsubmit="return validateItems();">
-                <div class="form-row form-group col-md-6">
-                    <label for="name" class="required" >Name:</label>
-                    <input class="form-control" type="text" name="name" id="name" placeholder="ex. Jane Smith" required><br /><br />
-                </div>
-                <div class="form-row form-group col-md-6">
-                    <label for="email" class="required">Email:</label>
-                    <input class="form-control" type="email" name="email" id="email" placeholder="your@email.com" required><br /><br />
-                </div>
-                <div class="form-row form-group col-md-6">
-                    <label for="phone" class="required">Phone:</label>
-                    <input class="form-control" type="tel" name="phone" id="phone" placeholder="###-###-####" required><br /><br />
-                </div>                
-                <div class="form-row form-group col-md-6">
-                    <label for="reason" class="required">Reason for Inquiry:</label>
-                    <select class="form-control" id="reason" name="reason" required>
-                        <option value="catering" selected>Catering</option>
-                        <option value="private">Private Party</option>
-                        <option value="feedback">Feedback</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                <br /><br />
-                <div class="form-check form-check-inline">
-                    Have you been to the restaurant? &emsp;
-                    <input class="form-check-input" type="radio" id="choice1" name="beenHere" value="no" checked="checked">
-                    <label for="choice1">No</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input"  type="radio" id="choice2>" name="beenHere" value="yes">
-                    <label for="choice2">Yes</label><br />
-                </div>
-                <br />
-                Best days to contact you: &emsp;
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input"  type="checkbox" id="monday" name="day" value="M">
-                    <label for="monday">M</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input"  type="checkbox" id="tuesday" name="day" value="T">
-                    <label for="tuesday">T</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input"  type="checkbox" id="wednesday" name="day" value="M">
-                    <label for="wednesday">W</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input"  type="checkbox" id="thursday" name="day" value="M">
-                    <label for="thursday">Th</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input"  type="checkbox" id="friday" name="day" value="M">
-                    <label for="friday">F</label>
-                </div>
-                <br /><br />
-                <button class="btn btn-primary" id="submitButton" type="submit" name="submit" align="center">Send Request</button>
-                 
-            </form>
-            
-            <footer>
-                <hr />
-                <p align="center">
-                    26 Grimace Lane, Mushroom Kingdom, IMG EEK<br />
-                    555-555-5555
-                </p>
-            </footer>
+            <div class="center-block col-md-10">
+                <form name="contactForm" onsubmit="return validateItems();">
+                    <div class="form-row form-group">
+                        <label for="name" class="required" >Name:</label>
+                        <input class="form-control" type="text" name="name" id="name" placeholder="ex. Jane Smith" required><br /><br />
+                    </div>
+                    <div class="form-row form-group">
+                        <label for="email" class="required">Email:</label>
+                        <input class="form-control" type="email" name="email" id="email" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-row form-group">
+                        <label for="phone" class="required">Phone:</label>
+                        <input class="form-control" type="tel" name="phone" id="phone" placeholder="###-###-####" required><br /><br />
+                    </div>                
+                    <div class="form-row form-group">
+                        <label for="reason" class="required">Reason for Inquiry:</label>
+                        <select class="form-control" id="reason" name="reason" required>
+                            <option value="catering" selected>Catering</option>
+                            <option value="private">Private Party</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-row form-group">
+                        <label for="additionalInfo">Additional Information:</label>
+                        <textarea class="form-control" id="additionalInfo" rows=3></textarea>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        Have you been to the restaurant? &emsp;
+                        <input class="form-check-input" type="radio" id="choice1" name="beenHere" value="no" checked="checked">
+                        <label for="choice1">No</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input"  type="radio" id="choice2>" name="beenHere" value="yes">
+                        <label for="choice2">Yes</label><br />
+                    </div>
+                    <br />
+                    Best days to contact you: &emsp;
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input"  type="checkbox" id="monday" name="day" value="M">
+                        <label for="monday">M</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input"  type="checkbox" id="tuesday" name="day" value="T">
+                        <label for="tuesday">T</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input"  type="checkbox" id="wednesday" name="day" value="M">
+                        <label for="wednesday">W</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input"  type="checkbox" id="thursday" name="day" value="M">
+                        <label for="thursday">Th</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input"  type="checkbox" id="friday" name="day" value="M">
+                        <label for="friday">F</label>
+                    </div>
+                    <br /><br />
+                    <button class="btn btn-primary" id="submitButton" type="submit" name="submit" align="center">Send Request</button>
+                </form>
+            </div>
+            </main>
+                <footer>
+                    <noscript><strong>This page is best viewed with Javascript enabled.</strong></noscript>
+                    <hr />
+                    <p>
+                        26 Grimace Lane, Mushroom Kingdom, IMG EEK<br />
+                        555-555-5555
+                    </p>
+                </footer>
         </div>
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
