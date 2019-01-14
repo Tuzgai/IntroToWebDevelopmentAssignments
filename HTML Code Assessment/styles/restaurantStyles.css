@@ -56,3 +56,11 @@ nav a:hover {
 nav a:active {
     color: aliceblue;
 }
+
+.fa-home:visited:hover {
+    -webkit-text-stroke: .3px #495867;
+}
+
+.fa-home:hover{
+    -webkit-text-stroke: .3px #593C8F;
+}
