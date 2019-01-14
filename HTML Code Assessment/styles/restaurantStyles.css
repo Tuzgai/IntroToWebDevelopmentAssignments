@@ -21,7 +21,10 @@ header h1 {
 
 main {
     padding: 1em;
-    background-color: #A79AB2
+    background-color: #A79AB2;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 body {
@@ -34,7 +37,8 @@ nav {
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    background-color: #593C8F ;
+    color: aliceblue;
+    background-color: #593C8F;
 }
 
 nav a {
@@ -50,5 +54,5 @@ nav a:hover {
 }
 
 nav a:active {
-
+    color: aliceblue;
 }
