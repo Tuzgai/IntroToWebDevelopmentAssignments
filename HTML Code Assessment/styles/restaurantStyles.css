@@ -19,16 +19,16 @@ header h1 {
     
 }
 
+body {
+    background-color: #D8DCFF;
+}
+
 main {
     padding: 1em;
-    background-color: #A79AB2;
+    background-color: #AEADF0;
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-}
-
-body {
-    background-color: #E1DEE9;
 }
 
 nav {
